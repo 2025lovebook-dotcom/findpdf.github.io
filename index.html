@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Academic & Document Support Services | Educational Research Assistance</title>
-    <meta name="description" content="Professional legal document support: open-access research guidance, format conversion, OCR processing, and legitimate standards lookup for education & research use only.">
-    <meta name="keywords" content="legal document support, open access research, format conversion, OCR service, academic research help, educational resources, public domain resources">
-    
+    <title>Open Access Research Support Hub | Free Academic Resource Guides</title>
+    <meta name="description" content="Free guides for open-access research, public domain resources, and legitimate academic support. Educational use only.">
+    <meta name="keywords" content="open access research, academic guides, public domain resources, research support, educational tools">
+
     <!-- Facebook / Meta Open Graph 优化标签 -->
-    <meta property="og:title" content="Legal Academic & Document Support Services">
-    <meta property="og:description" content="Legitimate document & research support for education & research use only">
+    <meta property="og:title" content="Open Access Research Support Hub">
+    <meta property="og:description" content="Free guides to help you find legitimate academic resources, public libraries, and open-access materials.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://i.imgur.com/8Z9J3L9.jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="Legal Document Support Services">
+    <meta property="og:site_name" content="Open Access Research Support">
     
-    <link rel="canonical" href="https://2025lovebook-dotcom.github.io/">
+    <link rel="canonical" href="https://yourowndomain.com/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -253,63 +253,26 @@
             border-left: 3px solid #4299e1;
         }
         
-        .price-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .price-range {
-            font-size: 2.4rem;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            margin-bottom: 15px;
+        /* 移除了价格相关样式 */
+        .btn-guide {
             display: inline-block;
-            padding: 10px 20px;
-            border-radius: 10px;
+            background: #4a5568;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
             transition: all 0.3s ease;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            margin-top: 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
         }
         
-        .price-unit {
-            font-size: 1.2rem;
-            font-weight: 500;
-            opacity: 0.9;
-        }
-        
-        .service-card:nth-child(1) .price-range {
-            color: #4299e1;
-            background: rgba(66, 153, 225, 0.1);
-        }
-        
-        .service-card:nth-child(2) .price-range {
-            color: #9f7aea;
-            background: rgba(159, 122, 234, 0.1);
-        }
-        
-        .service-card:nth-child(3) .price-range {
-            color: #38b2ac;
-            background: rgba(56, 178, 172, 0.1);
-        }
-        
-        .service-card:nth-child(4) .price-range {
-            color: #ed8936;
-            background: rgba(237, 137, 54, 0.1);
-        }
-        
-        .service-card:nth-child(5) .price-range {
-            color: #e53e3e;
-            background: rgba(229, 62, 62, 0.1);
-        }
-        
-        .service-card:nth-child(6) .price-range {
-            color: #4299e1;
-            background: rgba(66, 153, 225, 0.1);
-        }
-        
-        .service-card:hover .price-range {
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        .btn-guide:hover {
+            background: #2d3748;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         
         .disclaimer-section {
@@ -385,76 +348,63 @@
             font-weight: 600;
         }
         
-        .social-buttons {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 25px;
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
             position: relative;
             z-index: 1;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         }
         
-        .social-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 18px 35px;
-            border-radius: 50px;
-            text-decoration: none;
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
             font-weight: 600;
-            transition: all 0.4s ease;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-            position: relative;
-            overflow: hidden;
-            min-width: 200px;
-            font-size: 1.15rem;
+            color: #2d3748;
         }
         
-        .social-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
+        .form-group input,
+        .form-group textarea {
             width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-            transition: left 0.6s;
+            padding: 12px 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border 0.3s;
         }
         
-        .social-btn:hover::before {
-            left: 100%;
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
         }
         
-        .social-btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-        }
-        
-        .whatsapp {
-            background: linear-gradient(135deg, #25d366, #128c7e);
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
         
-        .telegram {
-            background: linear-gradient(135deg, #0088cc, #34a7e0);
-            color: white;
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         
-        .facebook {
-            background: linear-gradient(135deg, #1877f2, #4267b2);
-            color: white;
-        }
-        
-        .line {
-            background: linear-gradient(135deg, #00b900, #00c300);
-            color: white;
-        }
-        
-        .icon {
-            margin-right: 12px;
-            font-size: 1.4rem;
-        }
-
         .footer {
             text-align: center;
             margin-top: 50px;
@@ -465,7 +415,15 @@
             font-weight: 500;
         }
         
-        /* Facebook Ads 超级合规底部声明 */
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
         .facebook-ads-footer {
             background: #f8f9fa;
             padding: 25px 0;
@@ -509,10 +467,6 @@
                 font-size: 1.05rem;
             }
             
-            .price-range {
-                font-size: 2rem;
-            }
-            
             .disclaimer-section {
                 padding: 30px 20px;
             }
@@ -521,16 +475,8 @@
                 font-size: 2rem;
             }
             
-            .social-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .social-btn {
-                width: 100%;
-                max-width: 320px;
-                font-size: 1.1rem;
-                min-height: 60px;
+            .contact-form {
+                padding: 20px;
             }
         }
         
@@ -553,17 +499,6 @@
                 font-size: 2rem;
             }
             
-            .price-range {
-                font-size: 1.6rem;
-                padding: 8px 12px;
-            }
-            
-            .social-btn {
-                padding: 15px 25px;
-                min-width: auto;
-                width: 100%;
-            }
-            
             .disclaimer-section h2 {
                 font-size: 1.5rem;
             }
@@ -578,11 +513,7 @@
                 transform: scale(0.98);
             }
             
-            .social-btn:hover {
-                transform: none;
-            }
-            
-            .social-btn:active {
+            .submit-btn:active {
                 transform: scale(0.98);
             }
         }
@@ -597,7 +528,7 @@
             }
             
             .service-card,
-            .social-btn {
+            .submit-btn {
                 transition: none !important;
             }
         }
@@ -615,8 +546,8 @@
                 max-width: 100%;
             }
             
-            .social-buttons,
-            .contact-section {
+            .contact-section,
+            .facebook-ads-footer {
                 display: none;
             }
             
@@ -635,8 +566,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Legal Document & Research Support Services</h1>
-            <p>Legitimate open-access guidance • For education & research use only • Fully compliant with copyright laws</p>
+            <h1>Open Access Research Support Hub</h1>
+            <p>Free guides to legitimate academic resources • Public domain collections • Research tools for education</p>
         </div>
 
         <div class="services-grid">
@@ -644,146 +575,210 @@
                 <div class="service-icon" aria-hidden="true">
                     <i class="fas fa-book"></i>
                 </div>
-                <h3 id="service1-title">Chinese Open-Access Research Guidance</h3>
-                <p>Professional guidance for locating public library resources, open-access publications, and legally available Chinese documents.</p>
-                <div class="legal-note">100% legal open-access resources only</div>
-                <div class="price-container">
-                    <div class="price-range">$3</div>
-                    <span class="price-unit">per guidance service</span>
-                </div>
+                <h3 id="service1-title">Chinese Open-Access Guide</h3>
+                <p>Free guide to locating public libraries, open-access repositories, and legally available Chinese academic materials. We provide step-by-step instructions—never any copyrighted files.</p>
+                <div class="legal-note">We only show how to find public resources</div>
+                <a href="#" class="btn-guide request-guide" data-guide="chinese">Get Free Guide →</a>
             </div>
 
             <div class="service-card" role="article" aria-labelledby="service2-title">
                 <div class="service-icon" aria-hidden="true">
                     <i class="fas fa-book-open"></i>
                 </div>
-                <h3 id="service2-title">English Open-Access Research Guidance</h3>
-                <p>Help you find public domain materials, open-access repositories, and legally accessible English documents through official channels.</p>
-                <div class="legal-note">Fully compliant with copyright regulations</div>
-                <div class="price-container">
-                    <div class="price-range">$3</div>
-                    <span class="price-unit">per guidance service</span>
-                </div>
+                <h3 id="service2-title">English Open-Access Guide</h3>
+                <p>Free guide to public domain materials, open-access repositories, and legally accessible English documents through official channels. Instructions only, no file delivery.</p>
+                <div class="legal-note">Compliant with copyright regulations</div>
+                <a href="#" class="btn-guide request-guide" data-guide="english">Get Free Guide →</a>
             </div>
 
             <div class="service-card" role="article" aria-labelledby="service3-title">
                 <div class="service-icon" aria-hidden="true">
                     <i class="fas fa-newspaper"></i>
                 </div>
-                <h3 id="service3-title">Academic Resource Guidance</h3>
-                <p>Guidance for locating open-access academic papers, university library resources, and publisher-provided legitimate materials.</p>
-                <div class="legal-note">Legal & official access channels only</div>
-                <div class="price-container">
-                    <div class="price-range">$1–3</div>
-                    <span class="price-unit">per guidance service</span>
-                </div>
+                <h3 id="service3-title">Academic Resource Navigator</h3>
+                <p>Free navigation tips for open-access academic papers, university library portals, and publisher-provided legitimate materials. We teach you how to access them legally.</p>
+                <div class="legal-note">Legal access methods only</div>
+                <a href="#" class="btn-guide request-guide" data-guide="academic">Get Free Guide →</a>
             </div>
 
             <div class="service-card" role="article" aria-labelledby="service4-title">
                 <div class="service-icon" aria-hidden="true">
                     <i class="fas fa-file-export"></i>
                 </div>
-                <h3 id="service4-title">Legal Format Conversion</h3>
-                <p>Format conversion (MOBI/EPUB/DOC/TXT/PDF) for documents you own legally, for personal & educational use only.</p>
-                <div class="legal-note">For legally owned documents only</div>
-                <div class="price-container">
-                    <div class="price-range">$2</div>
-                    <span class="price-unit">per conversion</span>
-                </div>
+                <h3 id="service4-title">Format Conversion Guide</h3>
+                <p>Free instructions on how to convert formats (MOBI/EPUB/DOC/TXT/PDF) for documents you own legally. We explain tools and best practices—no conversion service provided.</p>
+                <div class="legal-note">For your own legally owned files</div>
+                <a href="#" class="btn-guide request-guide" data-guide="conversion">Get Free Guide →</a>
             </div>
 
             <div class="service-card" role="article" aria-labelledby="service5-title">
                 <div class="service-icon" aria-hidden="true">
                     <i class="fas fa-file-pdf"></i>
                 </div>
-                <h3 id="service5-title">Legal OCR Processing</h3>
-                <p>OCR conversion for scanned documents you own legally, turning them into editable files for personal study & research.</p>
-                <div class="legal-note">For authorized documents only</div>
-                <div class="price-container">
-                    <div class="price-range">$3</div>
-                    <span class="price-unit">per document</span>
-                </div>
+                <h3 id="service5-title">OCR Processing Guide</h3>
+                <p>Free guide to OCR conversion for scanned documents you own, turning them into editable files. We show you how to use free and open-source tools responsibly.</p>
+                <div class="legal-note">For your own authorized documents</div>
+                <a href="#" class="btn-guide request-guide" data-guide="ocr">Get Free Guide →</a>
             </div>
 
             <div class="service-card" role="article" aria-labelledby="service6-title">
                 <div class="service-icon" aria-hidden="true">
                     <i class="fas fa-file-contract"></i>
                 </div>
-                <h3 id="service6-title">Public Standards Guidance</h3>
-                <p>Guidance for locating publicly available industry standards & official documents through authorized platforms.</p>
+                <h3 id="service6-title">Public Standards Guide</h3>
+                <p>Free guide to locating publicly available industry standards and official documents through authorized platforms. No copyrighted content is shared.</p>
                 <div class="legal-note">Official & compliant public resources</div>
-                <div class="price-container">
-                    <div class="price-range">$3</div>
-                    <span class="price-unit">per guidance service</span>
-                </div>
+                <a href="#" class="btn-guide request-guide" data-guide="standards">Get Free Guide →</a>
             </div>
         </div>
 
         <div class="disclaimer-section" id="disclaimer">
-            <h2><i class="fas fa-exclamation-triangle"></i> Facebook Ads Compliance Notice</h2>
-            <p><strong>ALL SERVICES ARE 100% LEGAL AND COMPLIANT</strong></p>
-            <p><strong>Core Compliance Commitments:</strong></p>
+            <h2><i class="fas fa-exclamation-triangle"></i> Our Commitment to Compliance</h2>
+            <p><strong>All guides are 100% educational and compliant with copyright laws.</strong></p>
             <ul>
-                <li>We only provide <strong>guidance for open-access & publicly available resources</strong></li>
-                <li>We strictly follow <strong>international copyright laws & Facebook advertising policies</strong></li>
-                <li>No copyrighted content, pirated materials, or unauthorized file sharing</li>
-                <li>All services are for <strong>educational & research purposes only</strong></li>
-                <li>We do not provide, sell, or distribute any protected intellectual property</li>
+                <li>We only provide <strong>instructions and methods</strong> to locate open-access, public domain, and legally available resources.</li>
+                <li>We do <strong>not</strong> host, share, or distribute any copyrighted materials.</li>
+                <li>All guidance is for <strong>educational and research purposes only</strong>.</li>
+                <li>We strictly adhere to international copyright regulations and Facebook Advertising Policies.</li>
             </ul>
         </div>
 
         <div class="contact-section">
-            <h2>Contact Us for Legitimate Support</h2>
-            <div class="social-buttons">
-                <a href="https://wa.me/message/MULRU2AQRLQFO1" class="social-btn whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
-                    <span class="icon"><i class="fab fa-whatsapp"></i></span>
-                    WhatsApp
-                </a>
-                <a href="https://t.me/BookFinderService" class="social-btn telegram" target="_blank" rel="noopener noreferrer" aria-label="Contact us on Telegram">
-                    <span class="icon"><i class="fab fa-telegram-plane"></i></span>
-                    Telegram
-                </a>
-                <a href="https://www.facebook.com/share/182ZBTdK4R/?mibextid=wwXIfr" class="social-btn facebook" target="_blank" rel="noopener noreferrer" aria-label="Contact us on Facebook">
-                    <span class="icon"><i class="fab fa-facebook-f"></i></span>
-                    Facebook
-                </a>
-                <a href="https://line.me/ti/p/zdK9m_KyXQ" class="social-btn line" target="_blank" rel="noopener noreferrer" aria-label="Contact us on Line">
-                    <span class="icon"><i class="fab fa-line"></i></span>
-                    Line
-                </a>
+            <h2>Request Your Free Guide</h2>
+            <div class="contact-form">
+                <form id="guideForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guideSelect">Select Guide</label>
+                        <select id="guideSelect" name="guide" required>
+                            <option value="">-- Choose a guide --</option>
+                            <option value="chinese">Chinese Open-Access Guide</option>
+                            <option value="english">English Open-Access Guide</option>
+                            <option value="academic">Academic Resource Navigator</option>
+                            <option value="conversion">Format Conversion Guide</option>
+                            <option value="ocr">OCR Processing Guide</option>
+                            <option value="standards">Public Standards Guide</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Questions (optional)</label>
+                        <textarea id="message" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Request</button>
+                </form>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: #718096;">We'll email your guide within 24 hours. No spam, no file sharing.</p>
             </div>
         </div>
 
         <div class="footer">
-            <p>© 2025 Legal Document Support Services | All Rights Reserved | Fully Compliant</p>
+            <p>© 2025 Open Access Research Support Hub | All Rights Reserved | 
+            <a href="#" id="privacyLink">Privacy Policy</a> | 
+            <a href="#" id="termsLink">Terms of Use</a></p>
         </div>
     </div>
 
-    <!-- ✅ FACEBOOK ADS 超级合规底部声明（审核必过）-->
+    <!-- 合规底部声明（简洁真实） -->
     <div class="facebook-ads-footer">
-        <p>✅ This website operates <strong>strictly in compliance with Facebook Advertising Policies</strong> and international copyright laws.</p>
-        <p>✅ We only provide <strong>legal open-access resource guidance, format conversion, and OCR services</strong> for legally owned documents.</p>
-        <p>✅ All services are for <strong>educational and research purposes only</strong>. No copyrighted content or illegal materials are provided.</p>
-        <p>✅ No piracy, no unauthorized distribution, no protected intellectual property sales — 100% legitimate services.</p>
+        <p>This website provides free educational guides only. No copyrighted materials are sold, distributed, or linked. All content complies with Facebook Advertising Policies and international copyright laws.</p>
+    </div>
+
+    <!-- 隐私政策与条款模态框简单实现 -->
+    <div id="privacyModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000; justify-content:center; align-items:center;">
+        <div style="background:white; max-width:600px; margin:20px; padding:30px; border-radius:20px; max-height:80vh; overflow-y:auto;">
+            <h2>Privacy Policy</h2>
+            <p>We collect only your name and email to send you the requested guides. We do not share or sell your information. You can unsubscribe at any time. For questions, contact us at <a href="mailto:support@yourowndomain.com">support@yourowndomain.com</a>.</p>
+            <button onclick="document.getElementById('privacyModal').style.display='none'" style="margin-top:20px; padding:8px 20px; background:#667eea; color:white; border:none; border-radius:30px; cursor:pointer;">Close</button>
+        </div>
+    </div>
+
+    <div id="termsModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000; justify-content:center; align-items:center;">
+        <div style="background:white; max-width:600px; margin:20px; padding:30px; border-radius:20px; max-height:80vh; overflow-y:auto;">
+            <h2>Terms of Use</h2>
+            <p>All guides are for educational and research purposes only. You agree not to use any information for copyright infringement. We are not liable for misuse of the provided information.</p>
+            <button onclick="document.getElementById('termsModal').style.display='none'" style="margin-top:20px; padding:8px 20px; background:#667eea; color:white; border:none; border-radius:30px; cursor:pointer;">Close</button>
+        </div>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            document.addEventListener('click', function(e) {
-                const link = e.target.closest('a[href^="#"]');
-                if (link && link.getAttribute('href') !== '#') {
+            // 平滑滚动
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
                     e.preventDefault();
-                    const targetId = link.getAttribute('href').substring(1);
-                    const target = document.getElementById(targetId);
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                }
+                    const target = document.querySelector(href);
+                    if (target) target.scrollIntoView({ behavior: 'smooth' });
+                });
             });
-            
+
+            // 为每个“Get Free Guide”按钮绑定：预填表单并滚动到表单
+            const guideButtons = document.querySelectorAll('.request-guide');
+            const guideSelect = document.getElementById('guideSelect');
+            const formSection = document.querySelector('.contact-section');
+
+            guideButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const guide = this.getAttribute('data-guide');
+                    if (guideSelect) {
+                        // 匹配选项值
+                        let optionValue = '';
+                        if (guide === 'chinese') optionValue = 'chinese';
+                        else if (guide === 'english') optionValue = 'english';
+                        else if (guide === 'academic') optionValue = 'academic';
+                        else if (guide === 'conversion') optionValue = 'conversion';
+                        else if (guide === 'ocr') optionValue = 'ocr';
+                        else if (guide === 'standards') optionValue = 'standards';
+                        if (optionValue) guideSelect.value = optionValue;
+                    }
+                    if (formSection) formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            });
+
+            // 表单提交处理（演示：实际应配置后端，此处仅阻止默认并弹窗提示）
+            const form = document.getElementById('guideForm');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // 此处可替换为实际AJAX提交
+                    alert('Thank you! Your guide request has been received. We will email you within 24 hours.');
+                    form.reset();
+                });
+            }
+
+            // 隐私政策与条款模态框
+            const privacyLink = document.getElementById('privacyLink');
+            const termsLink = document.getElementById('termsLink');
+            const privacyModal = document.getElementById('privacyModal');
+            const termsModal = document.getElementById('termsModal');
+
+            if (privacyLink) {
+                privacyLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    privacyModal.style.display = 'flex';
+                });
+            }
+            if (termsLink) {
+                termsLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    termsModal.style.display = 'flex';
+                });
+            }
+            // 点击模态框背景关闭
+            window.addEventListener('click', function(e) {
+                if (e.target === privacyModal) privacyModal.style.display = 'none';
+                if (e.target === termsModal) termsModal.style.display = 'none';
+            });
+
+            // 滚动动画观察
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -794,10 +789,7 @@
                         observer.unobserve(entry.target);
                     }
                 });
-            }, { 
-                threshold: 0.05,
-                rootMargin: '0px 0px -50px 0px'
-            });
+            }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
             
             document.querySelectorAll('.service-card').forEach(card => {
                 card.style.opacity = 0;
@@ -822,12 +814,6 @@
         window.addEventListener('error', function(e) {
             console.error('Page error:', e.error);
         }, false);
-        
-        document.addEventListener('visibilitychange', function() {
-            if (document.visibilityState === 'visible') {
-                console.log('Page is now visible');
-            }
-        });
     </script>
 </body>
 </html>
